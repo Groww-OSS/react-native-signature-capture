@@ -4,7 +4,11 @@ import android.app.Application;
 import android.content.Context;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
+<<<<<<< HEAD
+import com.rssignaturecapture.RSSignatureCapturePackage;
+=======
 import com.facebook.react.ReactInstanceManager;
+>>>>>>> upstream/master
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.soloader.SoLoader;
@@ -20,6 +24,16 @@ public class MainApplication extends Application implements ReactApplication {
           return BuildConfig.DEBUG;
         }
 
+<<<<<<< HEAD
+    @Override
+    protected List<ReactPackage> getPackages() {
+      return Arrays.<ReactPackage>asList(
+          new MainReactPackage(),
+            new RSSignatureCapturePackage()
+      );
+    }
+  };
+=======
         @Override
         protected List<ReactPackage> getPackages() {
           @SuppressWarnings("UnnecessaryLocalVariable")
@@ -34,6 +48,7 @@ public class MainApplication extends Application implements ReactApplication {
           return "index";
         }
       };
+>>>>>>> upstream/master
 
   @Override
   public ReactNativeHost getReactNativeHost() {

@@ -118,6 +118,7 @@ class CustomComponent extends Component {
 
 + **maxSize**  : sets the max size of the image maintains aspect ratio, default is 500
 
++ **clearSignatureOnOrientaionChange**  : Clears the entered signature on when changed from portriat to landscape, default is false
 + **minStrokeWidth**  :  sets the min stroke line width (_Android only_)
 
 + **maxStrokeWidth**  :  sets the max stroke line width (_Android only_)
